@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Meu Projeto</title>
 </head>
 <body>
   <header id="cabecalho">
     <h1 id="titulo">Meu projeto Trybe</h1>
-    <img id="trybe-icon" src="images/logo-trybe.png" alt="Ícone da trybe, é um 'Y' preto">
+    <img id="trybe-icon" src="images/logo-trybe.png" alt="icone trybe">
     <nav id="header-navigation">
       <ul>
         <li><a href="#cabecalho">header</a></li>
@@ -22,9 +22,9 @@
   </header>
   <main id="main">
     <section id="main-content">
-      <section id="learned-and-unlearned">
+      <section class="lado-esquerdo">
         <section id="learned-content">
-          <h3 id="title-learned-content">Aprendido na Trybe</h3>
+          <h2 id="title-learned-content">Aprendido na Trybe</h2>
           <ol id="licoes_aprendidas">
             <li>DualBoot</li>
             <li>Linux</li>
@@ -39,7 +39,7 @@
           </ol>
         </section>
         <section id="unlearned-content">
-          <h3 id="title-unlearned-content">Ainda não aprendido na Trybe</h3>
+          <h2 id="title-unlearned-content">Ainda não aprendido na Trybe</h2>
           <ul id="licoes_a_aprender">
             <li>Javascript</li>
             <li>DOM</li>
@@ -54,17 +54,12 @@
           </ul>
         </section>
       </section>
-      <img id="minha_foto" src="images/minha-foto.png" alt="Uma foto minha, cabelos pretos, olhos castanhos.">
-    </section>
-
-    <hr />
-
-    <section id="main-content2">
-      <div id="article-and-table">
+      <section class="lado-direito" id="article-and-table">
         <article id="article-about-me">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, enim eu dapibus rutrum, lectus urna imperdiet mi, nec sodales odio augue eu massa. Nam condimentum felis vel libero gravida egestas. Phasellus lacinia est a quam euismod, sit amet efficitur ipsum sagittis. In hac habitasse platea dictumst. Ut placerat, risus sit amet bibendum egestas, lectus enim mattis diam, sit amet lectus.
         </article>
         <table>
+          <caption>Colocar algo aqui depois</caption>
           <tr>
             <th>Teste1</th>
             <th>Teste2</th>
@@ -91,9 +86,15 @@
             <td>Teste</td>
           </tr>
         </table>
-      </div>
+      </section>
+    </section>
+
+    <hr />
+
+    <section id="main-content2">
+      <img id="minha_foto" src="images/minha-foto.png" alt="my photo black hair brown eyes">
       <aside class="side-bar">
-        <h4 id="aside-title">Titulo Teste</h4>
+        <h3 id="aside-title">Titulo Teste</h3>
         <ul>
           <li><a href="#">Alguma parte específica</a></li>
           <li><a href="#">Outra parte específica</a></li>
@@ -107,12 +108,12 @@
 
   </main>
   <footer id="rodape">
-    <section>
+    <section id="footer-links">
       <ul>
-        <li><a href="www.google.com" target="_blank">Primeiro Link</a></li>
-        <li><a href="www.google.com" target="_blank">Segundo Link</a></li>
-        <li><a href="www.google.com" target="_blank">Terceiro Link</a></li>
-        <li><a href="www.google.com" target="_blank">Quarto Link</a></li>
+        <li><a href="#main-content">Main</a></li>
+        <li><a href="#main-content2">Article</a></li>
+        <li><a href="#rodape">Footer</a></li>
+        <li><a href="https://github.com/gfpoliva" target="_blank">Sim ou Não?</a></li>
       </ul>
     </section>
   </footer>
